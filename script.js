@@ -12,12 +12,8 @@ const jsonData = {
           "brand":"Apple",
           "category":"smartphones",
           "thumbnail":"https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-          "images":[
-             "https://cdn.dummyjson.com/product-images/1/1.jpg",
-             "https://cdn.dummyjson.com/product-images/1/2.jpg",
-             "https://cdn.dummyjson.com/product-images/1/3.jpg",
-             "https://cdn.dummyjson.com/product-images/1/4.jpg",
-             "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+          "photo":[
+             "download.jpg",
           ]
        },
        {
@@ -577,5 +573,7 @@ for (let i = 0; i < jsonData.products.length; i++) {
     row.insertCell(3).innerHTML = products.rating;       
     row.insertCell(4).innerHTML = products.brand;     
     row.insertCell(5).innerHTML = products.category; 
+    row.insertCell(6).innerHTML = `<img scr="${products.photo}"/>`;
+     
     
 }
